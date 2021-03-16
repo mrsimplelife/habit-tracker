@@ -5,7 +5,6 @@ class Habit extends PureComponent {
   handleDecrement = () => this.props.handleDecrement(this.props.habit.id);
   handleDelete = () => this.props.handleDelete(this.props.habit.id);
   render() {
-    console.log("Habit");
     return (
       <li className="habit">
         <span className="habit__name">{this.props.habit.name}</span>
