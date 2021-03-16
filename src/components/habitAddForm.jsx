@@ -1,4 +1,4 @@
-import { createRef, memo, PureComponent } from "react";
+import { createRef, memo } from "react";
 
 const HabitAddForm = memo((props) => {
   console.log("form");
