@@ -1,4 +1,5 @@
 import { Component } from "react";
+import "../app.css";
 
 class SimpleHabit extends Component {
   state = {
@@ -12,10 +13,10 @@ class SimpleHabit extends Component {
   render() {
     return (
       <li className="habit">
-        <span className="habit-name">Reading</span>
-        <span className="habit-count">{this.state.count}</span>
+        <span>Reading</span>
+        <span className="habit__count">{this.state.count}</span>
         <button
-          className="habit-button habit-increase"
+          className="habit__button habit__button--increase"
           onClick={this.handleIncrement}
         >
           <i className="fas fa-plus-square"></i>
