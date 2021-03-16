@@ -1,10 +1,11 @@
-import { Component } from "react";
+import { PureComponent } from "react";
 
-class Habit extends Component {
+class Habit extends PureComponent {
   handleIncrement = () => this.props.handleIncrement(this.props.habit.id);
   handleDecrement = () => this.props.handleDecrement(this.props.habit.id);
   handleDelete = () => this.props.handleDelete(this.props.habit.id);
   render() {
+    console.log("Habit");
     return (
       <li className="habit">
         <span className="habit__name">{this.props.habit.name}</span>
